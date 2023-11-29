@@ -347,8 +347,8 @@ title .title {
   font-family: sans-serif;
 }
 .title h1 {
-  font-size: 3em;
-  line-height: 1.5em;
+  font-size: 2em;
+  line-height: 1em;
   color: #fefefe;
 }
 .title p {
@@ -466,11 +466,11 @@ main {
 }
 
 main {
-  width: 50%;
+  width: 90%;
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
-  gap: 5vh;
+  gap: 1vh;
   margin: 0 auto 10vh;
 }
 
@@ -630,11 +630,12 @@ main {
 
 .dvd {
   position: absolute;
-  width: 95px;
+  width: 110px;
   height: 54px;
   top: 7px;
   animation: slideVert 6.6s linear alternate infinite,
     slideHori 4.68s linear alternate infinite, colorChange 30s linear infinite;
+    filter: invert()
 }
 
 .logoTV {
@@ -754,4 +755,9 @@ main {
 	95% {
 		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
 	}
+}
+
+
+html, body {
+  padding: 10rem;
 }
