@@ -1,36 +1,3 @@
-// Cheat Sheet Hover Modals
-
-var n = 0;
-$(".content-item")
-  .mouseenter(function () {
-    $(this)
-      .children(".content-item-desc")
-      .toggleClass("content-item-desc_hide");
-  })
-  .mouseleave(function () {
-    $(this)
-      .children(".content-item-desc")
-      .toggleClass("content-item-desc_hide");
-  });
-
-$(".replaceMeTo").hover(
-  function () {
-    $(this).text("100%");
-  },
-  function () {
-    $(this).text("to");
-  }
-);
-
-$(".replaceMeFrom").hover(
-  function () {
-    $(this).text("0%");
-  },
-  function () {
-    $(this).text("from");
-  }
-);
-
 // Smooth Scrolling
 
 const lenis = new Lenis();
@@ -69,3 +36,5 @@ PARTICLES.forEach((P) => {
   );
 });
 //# sourceURL=pen.js
+
+
