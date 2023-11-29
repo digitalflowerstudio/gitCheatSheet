@@ -334,7 +334,6 @@ main {
 
 /* Cheat Sheet */
 
-
 body {
   display: flex;
   flex-direction: column;
@@ -344,9 +343,7 @@ body {
   background: #222;
 }
 
-title
-
-.title {
+title .title {
   font-family: sans-serif;
 }
 .title h1 {
@@ -468,7 +465,7 @@ main {
   color: white;
 }
 
-main{
+main {
   width: 50%;
   display: flex;
   /* justify-content: center; */
@@ -483,27 +480,65 @@ main{
   margin: auto;
 }
 
-.general, .creation, .switch {
+.general,
+.creation,
+.switch {
   box-shadow: 0px 0px 10px 1px pink;
+  border-radius: 2rem;
   width: 50vw;
   padding: 2rem;
+  background-color: black;
+  border-radius: 2rem;
 }
 
-.switch:hover, .general:hover, .creation:hover {
-scale: 1.05;
-transition: 0.3s ease-in-out;
+.switch:hover,
+.general:hover,
+.creation:hover {
+  scale: 1.05;
+  transition: 0.3s ease-in-out;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-.title, .content {
+.title,
+.content {
   text-align: center;
 }
 
 span {
   color: rgb(226, 15, 215);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-style: italic;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.title, .content {
+  background-color: black;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.sparkle-button {
+  margin: 2rem;
+}
+
+body {
+  padding: 2rem;
+}
+
+main {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.737);
+  border-radius: 3rem;
+  width: 80%;
 }
